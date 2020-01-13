@@ -1,0 +1,16 @@
+[0m[[0m[31merror[0m] [0m[0m/home/knoldus/Downloads/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:9:20: object GreeterMain is not a member of package com.example[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.example.GreeterMain.Start[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/knoldus/Downloads/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:74:39: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String("MyAkkaSystem")[0m
+[0m[[0m[31merror[0m] [0m[0m required: akka.actor.typed.Behavior[?][0m
+[0m[[0m[31merror[0m] [0m[0m Note: implicit value system is not applicable here because it comes after the application point and it lacks an explicit result type[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val system = ActorSystem("MyAkkaSystem")[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/knoldus/Downloads/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:75:50: implicit ActorRefFactory required: if outside of an Actor you need an implicit ActorSystem, inside of an actor this should be the implicit ActorContext[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val materializer = ActorMaterializer()[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/knoldus/Downloads/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala:77:66: value fromFile is not a member of object akka.stream.scaladsl.Source[0m
+[0m[[0m[31merror[0m] [0m[0m    val source = akka.stream.scaladsl.Source.fromIterator(Source.fromFile("src/main/resources/data1.csv").getLines)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
